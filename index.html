@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Calculadora de Proyectos</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <script src="assets/js/services.js"></script>
+</head>
+
+<body>
+    <div id="modal">
+        <div id="modal-content">
+            <h3>Configurar Token de GitHub</h3>
+            <p>Hola para inciar y ver sus proyectos debe configurar su token de acceso.</p>
+            <div>
+                <button id="jumpto-page">⚙️ Configurar token</button>
+                <button id="closeModalBtn">🏃🏻‍♂️ Saltar</button>
+            </div>
+        </div>
+    </div>
+    <div id="modal-config">
+        <div id="modal-content-config">
+            <h2>Configurar Token</h2>
+            <h5>Ingresar Token de usuario</h5>
+            <input type="text" id="token-input"></input>
+            <h5>Ingresar usuario de GitHub</h5>
+            <input type="text" id="user-input"></input>
+            <div>
+                <button id="confirm-button">✅ Confirmar</button>
+                <button id="closeModalBtn-config">❌ Cerrar</button>
+            </div>
+        </div>
+    </div>
+    <header>
+        <h1>🧑🏻‍🎓 Mis Proyectos Escolares</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <button id="openModalBtn">⚙️ Configuración</button>
+            <a href="sobre.html">ℹ️ Sobre</a>
+            <button id="btn-modo" class="btn-modo">🌙 Modo Oscuro</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="controles">
+            <input type="text" id="buscador" placeholder="Buscar proyecto...">
+        </section>
+
+        <!-- Estadísticas -->
+        <section class="estadisticas">
+            <div class="stat">
+                <h2 id="total-proyectos">0</h2>
+                <p>Proyectos Totales</p>
+            </div>
+            <div class="stat">
+                <h2 id="porcentaje-completado">0%</h2>
+                <p>Completados</p>
+            </div>
+            <div class="stat">
+                <h2 id="promedio-calificacion">0.0</h2>
+                <p>Promedio</p>
+            </div>
+        </section>
+        <section class="proyectos" id="lista-proyectos">
+            <p class="mensaje-vacio">No tienes proyectos aún. ¡Agrega uno!</p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 - Proyecto escolar</p>
+    </footer>
+</body>
+<script src="assets/js/main.js"></script>
+
+</html>
